@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", serif;
+}
+
+body {
+    background-color: rgb(237, 141, 205);
+    height: 100vh; /* Prend tout l'écran */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; /* Supprime les marges par défaut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.product-card {
+    background-color: rgba(255, 255, 255, 0.701);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 40px 50px;
+    transition: all 0.5s ease;
+}
+  
+.product-image img {
+    width: 300px;
+    border-radius: 8px;
+    margin: 0 35px;
+}
+
+.product-info {
+    color: #333;
+    text-align: left;
+}
+
+.collection-reference {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collection {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.reference {
+    font-size: 10px;
+    color: #aaa;
+}
+  
+.product-name {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0 -2px 0;
+}
+  
+.rating {
+    color: #fbc02d;
+    font-size: 12px;
+}
+  
+.reviews {
+    color: #666;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.controls span {
+    font-weight: 400;
+}
+
+#btn-black {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+#btn-beige {
+    background-color: rgb(234, 206, 206);
+    color: rgb(234, 206, 206);
+}
+
+#btn-brown{
+    background-color: rgb(120, 46, 46);
+    color: rgb(120, 46, 46);
+}
+
+.controls #btn-black:focus {
+    background-color: black;
+    color: white;
+}
+
+.controls #btn-beige:focus {
+    color: black;
+}
+
+.controls #btn-brown:focus {
+    color: white;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+  
+.controls button:hover {
+    opacity: 0.7;  /* Légère réduction de l'opacité au survol */
+}
+
+.controls button:focus {
+    color: black;
+}
+
+#btn-black button:focus {
+    color: rgb(255, 255, 255);
+}
+  
+.price {
+    margin: 50px 0 10px 0;
+    font-size: 18px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+  
+.original-price {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 12px;
+}
+  
+.discounted-price {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+}
+  
+.shop-button {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.shop-button button:first-child {
+    flex: 9; /* Le premier bouton occupe 90% de l'espace */
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 12px;
+}
+
+.shop-button button:last-child {
+    flex: 1; /* Le deuxième bouton occupe 10% de l'espace */
+    background-color: #dd1895;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 18px;
+}
+  
+/* Responsive */
+@media (max-width: 768px) {
+    .product-card {
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      margin: 60px auto;
+      padding: 20px;
+      transition: all 0.5s ease;
+    }
+  
+    .product-image img {
+      margin: 20px 0;
+      width: 70%;
+      max-width: 300px;
+    }
+
+    .shop-button {
+        padding-bottom: 30px;
+    }
+} 
