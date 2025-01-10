@@ -63,7 +63,7 @@ body {
 }
   
 .product-name {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
     margin: 10px 0 -2px 0;
 }
@@ -124,14 +124,6 @@ body {
 .controls button:hover {
     opacity: 0.7;  /* Légère réduction de l'opacité au survol */
 }
-
-.controls button:focus {
-    color: black;
-}
-
-#btn-black button:focus {
-    color: rgb(255, 255, 255);
-}
   
 .price {
     margin: 50px 0 10px 0;
@@ -191,9 +183,10 @@ body {
     .product-card {
       flex-direction: column;
       align-items: center;
-      width: 300px;
+      width: 350px;
+      min-width: 350px;
       margin: 60px auto;
-      padding: 20px;
+      padding: 30px;
       transition: all 0.5s ease;
     }
   
