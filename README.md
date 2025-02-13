@@ -4,6 +4,8 @@
 
 Cette page produit présente un sweat-shirt avec un système interactif permettant de changer sa couleur. Elle affiche également des informations clés comme le prix, la notation et une référence produit.
 
+![image](https://github.com/user-attachments/assets/bdfc2473-b321-4781-92d2-c5f0c0ccc900)
+
 ## Technologies utilisées
 
 - **HTML** pour la structure
