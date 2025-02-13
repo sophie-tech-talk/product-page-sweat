@@ -20,7 +20,11 @@ Cette page produit présente un sweat-shirt avec un système interactif permetta
 │── index.html      # Page principale
 │── style.css       # Feuille de style
 │── script.js       # Script JavaScript
-│── img/            # Images du produit
+│── img/            # Dossier des images
+│   ├── sweat-black.png   # Image du sweat noir
+│   ├── sweat-beige.png   # Image du sweat beige
+│   ├── sweat-brown.png   # Image du sweat marron
+│   ├── favicon.png       # Icône du site
 ```
 
 ## Fonctionnalités
